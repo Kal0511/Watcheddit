@@ -1,0 +1,40 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "nyc mocha ./test/**/*.js --exit",
+    "start": "node server.js",
+    "debug": "nodemon --inspect=0.0.0.0:3002 server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.2",
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "jsonpath": "^1.1.1",
+    "k6": "^0.0.0",
+    "mongodb": "^4.4.0",
+    "mongoose": "^6.2.7",
+    "nodemon": "^2.0.15",
+    "nyc": "^15.1.0",
+    "optionator": "^0.9.1",
+    "swagger-autogen": "^2.20.3",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "mocha": "^9.2.2",
+    "supertest": "^6.2.2"
+  }
+}
